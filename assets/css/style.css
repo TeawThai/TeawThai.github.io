@@ -678,7 +678,7 @@ iframe {
 	.mu-hero-top-info ul li {
 		border-left: none;
 		float: none;
-		border-right: 1px solid #f8f8f8;
+		border-right: none;
 	}
 
 	.mu-hero-top-info ul li:last-child {
