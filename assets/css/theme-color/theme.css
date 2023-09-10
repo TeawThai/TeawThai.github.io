@@ -1,0 +1,41 @@
+#mu-hero:after {
+	background-color: #c762cbd9;/* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #64b3f4, #c762cbd9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #64b3f4, #c762cbd9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+a:hover,
+a:focus,
+.mu-book-now-btn,
+.mu-copy-right a:hover,
+.mu-copy-right a:focus,
+.mu-logo,
+.mu-logo:hover,
+.mu-logo:focus {
+	color: #c762cb;
+}
+
+
+.scrollToTop{
+	background-color: #c762cb;
+}
+
+.mu-social-media a:hover,
+.mu-social-media a:focus {
+	border: 1px solid #c762cb;
+	color: #c762cb;
+}
+
+.mu-featured-tours-single-info .mu-book-now-btn,
+.mu-about-area .mu-about-right .mu-book-now-btn {
+	border: 1px solid #c762cb;
+	transition: 0.5s;
+}
+
+.mu-featured-tours-single-info .mu-book-now-btn:hover,
+.mu-about-area .mu-about-right .mu-book-now-btn:hover {
+	border: 1px solid #c762cb;
+	background-color: #c762cb;
+	color: #ffffff;
+}
