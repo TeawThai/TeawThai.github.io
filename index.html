@@ -12,18 +12,29 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
      <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-9RES6ZRWY7"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'G-9RES6ZRWY7');
+	</script>
+	<script src="https://www.gstatic.com/firebasejs/9.0.1/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/9.0.1/firebase-database.js"></script>
+
     <!-- Theme color -->
     <link id="switcher" href="assets/css/theme-color/theme.css" rel="stylesheet">
-
+	<script src="https://www.gstatic.com/firebasejs/10.5.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.5.0/firebase-database.js"></script>
     <!-- Main Style -->
     <link href="style.css" rel="stylesheet">
  
  
 	</head>
+	
   <body>
-
-  
-
    <!--START SCROLL TOP BUTTON -->
     <a class="scrollToTop" href="#">
       <i class="fa fa-angle-up"></i>
@@ -271,7 +282,7 @@
 								<a href="#"><i class="fa fa-linkedin"></i></a>
 								<a href="#"><i class="fa fa-youtube"></i></a>
 								<div class="counter">
-									<div><i class="fa fa-eye" aria-hidden="true"></i>Visit count :  </div><div class="web-counter"></div>
+									<div><i class="fa fa-eye" aria-hidden="true"></i>Visit count :  </div><div class="web-counter visitCount"></div>
 								</div>
 								
 							</div>
@@ -284,6 +295,30 @@
 	</footer>
 	<!-- End footer -->
 
+	<script type="module">
+		const firebaseConfig = {
+		  apiKey: "AIzaSyAIiJUfNzfWM3LbR2OIJ884ZgsZXh4TYkk",
+		  authDomain: "visit-count-teawthai.firebaseapp.com",
+		  databaseURL: "https://visit-count-teawthai-default-rtdb.asia-southeast1.firebasedatabase.app/",
+		  projectId: "visit-count-teawthai",
+		  storageBucket: "visit-count-teawthai.appspot.com",
+		  messagingSenderId: "401806640476",
+		  appId: "1:401806640476:web:50c2eb66a5a8792b952d99",
+		};
+	  
+		// Initialize Firebase
+		firebase.initializeApp(firebaseConfig);
+
+		// Get a reference to the Firebase Realtime Database
+		var database = firebase.database();
+		var visitCountRef = database.ref('visitCount');
+
+		// Listen for changes to the "visitCount" value in the database
+		visitCountRef.on('value', function(snapshot) {
+			var visitCount = snapshot.val();
+			document.getElementById('visitCount').textContent = visitCount;
+		});
+	</script>
 	
 	<!-- JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
