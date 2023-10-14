@@ -452,6 +452,7 @@ iframe {
 
 #mu-featured-tours {
 	background-color: #fff;
+	box-shadow: 0 0 18px -9px #000;
 	float: left;
 	padding: 100px 0;
 	display: inline;
@@ -482,6 +483,7 @@ iframe {
 
 .mu-featured-tours-single {
 	background-color: #f8f8f8;
+	box-shadow: 3px 1px 18px -9px #000;
 	display: inline;
 	float: left;
 	width: 100%;
