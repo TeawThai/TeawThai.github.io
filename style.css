@@ -662,6 +662,10 @@ iframe {
 
 @media (max-width: 767px) {
 
+	.counter{
+		margin-top: 5px;
+	}
+
 	.mu-logo-area {
 		width: 100%;
 		text-align: center;
