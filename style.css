@@ -645,18 +645,18 @@ iframe {
 
 @media (max-width: 767px) {
 
-	.mu-logo{
-		font-size: 28px;
-		display: inline;
-		float: left;
-		margin-top: 0.5rem;
+	.mu-logo-area {
+		width: 100%;
+		text-align: center;
 	}
 
-	.mu-hero-top-info ul {
-		margin-top: 10px;
+	.mu-hero-top-info {
+		text-align: center;
+		width: 100%;
 	}
 
 	.mu-hero-top-info ul li {
+		font-size: 12px;
 		border-left: none;
 		float: none;
 		border-right: none;
@@ -725,6 +725,17 @@ iframe {
 	.mu-hero-featured-content h1 {
 		font-size: 30px;
 	}
+	.mu-logo{
+		margin-bottom: 0;
+	}
+	.mu-hero-top{
+		padding-bottom: 0;
+	}
+	.mu-hero-top-info,
+	.mu-hero-top-info ul{
+		padding-top: 0;
+		margin-top: 5px;
+	}
 
 	.mu-hero-featured-content p {
 		font-size: 18px;
@@ -758,8 +769,7 @@ iframe {
 	}
 
 	.mu-logo {
-		margin-bottom: 10px;
-		font-size: 30px;
+		font-size:30px;
 	}
 
 	.mu-hero-featured-content {
