@@ -181,8 +181,8 @@ iframe {
 	text-decoration: none;
 	width: 55px;
 	z-index: 999;
-	-webkit-transition: all 0.5s ease 0s;
-	transition: all 0.5s ease 0s;
+	-webkit-transition: ease-out 0.2s ease 0s;
+	transition: ease-out 0.2s ease 0s;
 	height: 55px;
 	border-radius: 10px;
 }
@@ -727,7 +727,7 @@ iframe {
 	}
 
 	.mu-hero-featured-content p {
-		font-size: 16px;
+		font-size: 18px;
 		line-height: 1.5;
 		letter-spacing: 0.5px;
 	}
@@ -775,7 +775,7 @@ iframe {
 	}
 
 	.mu-hero-featured-content p {
-		font-size: 12px;
+		font-size: 16px;
 	}
 
 	.mu-scrolldown {
