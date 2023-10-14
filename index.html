@@ -290,31 +290,6 @@
 
 	</footer>
 	<!-- End footer -->
-
-	<script type="module">
-		const firebaseConfig = {
-		  apiKey: "AIzaSyAIiJUfNzfWM3LbR2OIJ884ZgsZXh4TYkk",
-		  authDomain: "visit-count-teawthai.firebaseapp.com",
-		  databaseURL: "https://visit-count-teawthai-default-rtdb.asia-southeast1.firebasedatabase.app/",
-		  projectId: "visit-count-teawthai",
-		  storageBucket: "visit-count-teawthai.appspot.com",
-		  messagingSenderId: "401806640476",
-		  appId: "1:401806640476:web:50c2eb66a5a8792b952d99",
-		};
-	  
-		// Initialize Firebase
-		firebase.initializeApp(firebaseConfig);
-
-		// Get a reference to the Firebase Realtime Database
-		var database = firebase.database();
-		var visitCountRef = database.ref('visitCount');
-
-		// Listen for changes to the "visitCount" value in the database
-		visitCountRef.on('value', function(snapshot) {
-			var visitCount = snapshot.val();
-			document.getElementById('visitCount').textContent = visitCount;
-		});
-	</script>
 	
 	<!-- JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
