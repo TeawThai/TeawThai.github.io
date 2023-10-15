@@ -17,9 +17,9 @@
 	<script>
 		window.dataLayer = window.dataLayer || [];
 		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
+			gtag('js', new Date());
 
-		gtag('config', 'G-96KVS6G1LY');
+			gtag('config', 'G-96KVS6G1LY');
 	</script>
 
     <!-- Theme color -->
@@ -73,7 +73,7 @@
 					<div class="mu-hero-featured-content">
 						<h2>ยินดีต้อนรับสู่ เที่ยวไทย.com</h2>
 						<h1>10 ร้านเด็ดร้านอร่อย ณ ตลาดศาลเจ้า</h1>
-						<p>ตลาดศาลเจ้า ถือเป็นตลาดนัดยามค่ำคืนที่มีชื่อเสียงของจังหวัดสุราษฎร์ธานี เรียกได้ว่าเป็นสีสันยามค่ำคืนของจังหวัดสุราษฎร์ธานีเลยทีเดียว ด้วยร้านค้าที่เป็นเอกลักษณ์เต็มสองฝากถนน เต็มไปด้วยอาหารพื้นเมืองที่นักท่องเที่ยวต้องลิ้มลอง ที่มาของชื่อตลาดแห่งนี้สืบเนื่องจากทำเลที่ตั้งซึ่งอยู่ใกล้ๆ กับศาลเจ้า ภายในตลาดจะเป็นซอยเล็ก ๆ ที่มีรถเข็น ร้านรวงตั้งอยู่เต็มสองข้างทาง ประดับประดาด้วยของกินของอร่อยแบบพื้นเมือง นับเป็นตลาดของกินที่มีความหลากหลายมากแห่งหนึ่ง ไม่ว่าจะเป็น ผัดไทยเจ้าดังประจำตลาดศาลเจ้า ทอดมันย่างที่หาทานที่อื่นไม่ได้ เห็ดชุบแป้งทอดร้อนๆ ขนมจีนน้ำยาหลากรส และอาหารท้องถิ่นอื่นๆ อีกมากมาย.</p>
+						<p>ตลาดศาลเจ้า ถือเป็นตลาดนัดยามค่ำคืนที่มีชื่อเสียงของจังหวัดสุราษฎร์ธานี เรียกได้ว่าเป็นสีสันยามค่ำคืนของจังหวัดสุราษฎร์ธานีเลยทีเดียว ด้วยร้านค้าที่เป็นเอกลักษณ์เต็มสองฟากถนน เต็มไปด้วยอาหารพื้นเมืองที่นักท่องเที่ยวต้องลิ้มลอง ที่มาของชื่อตลาดแห่งนี้สืบเนื่องจากทำเลที่ตั้งซึ่งอยู่ใกล้ๆ กับศาลเจ้า ภายในตลาดจะเป็นซอยเล็ก ๆ ที่มีรถเข็น ร้านรวงตั้งอยู่เต็มสองข้างทาง ประดับประดาด้วยของกินของอร่อยแบบพื้นเมือง นับเป็นตลาดของกินที่มีความหลากหลายมากแห่งหนึ่ง ไม่ว่าจะเป็น ผัดไทยเจ้าดังประจำตลาดศาลเจ้า ทอดมันย่างที่หาทานที่อื่นไม่ได้ เห็ดชุบแป้งทอดร้อนๆ ขนมจีนน้ำยาหลากรส และอาหารท้องถิ่นอื่นๆ อีกมากมาย.</p>
 						
 						<div class="mu-scrolldown-area">
 							<a href="#mu-about" class="mu-scrolldown" id="mu-scrolldown"><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
@@ -279,11 +279,21 @@
 								<a href="#"><i class="fa fa-youtube"></i></a>
 								<div class="counter">
 									<div><i class="fa fa-eye" aria-hidden="true"></i>Visit count :  </div><div class="web-counter visitCount"></div>
+									<div id="visitorCount">Loading...</div>
+
+									<script>
+										// เรียกใช้ API ของ Google Analytics เพื่อดึงข้อมูลจำนวนการเข้าชม
+										gtag('event', 'page_view', {
+											'send_to': 'G-96KVS6G1LY',
+											'event_callback': function() {
+												// เมื่อดึงข้อมูลสำเร็จ แสดงบนหน้าเว็บ
+												var visitorCount = gtag('event', 'page_view');
+												document.getElementById('visitorCount').textContent = '' + visitorCount;
+											}
+										});
+									</script>
 								</div>
-								<!-- counterAPI library, insert anywhere on the page. -->
-								<script src="https://counterapi.com/c.js?ns=teawthai.github.io/" async ></script>
-								<!-- Add the counter instance somewhere to your template... -->
-								<div class="counterapi" style="min-height:44px" ></div>
+
 								
 							</div>
 						</div>
