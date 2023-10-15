@@ -803,6 +803,7 @@ iframe {
 		font-size: 14px;
 	}
 
+
 	.mu-logo {
 		font-size:30px;
 	}
@@ -828,7 +829,8 @@ iframe {
 
 	.mu-scrolldown {
 		font-size: 35px;
-		margin-top: 40px;
+		margin-top: 25px;
+		margin-bottom: 20px;
 	}
 	
 	h2 {
