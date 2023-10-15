@@ -812,11 +812,14 @@ iframe {
 	}
 
 	.mu-hero-featured-content h1 {
-		font-size: 25px;
+		margin-top: 10px;
+		font-size: 30px;
+		padding-bottom: 30px;
 	}
 
 	.mu-hero-featured-content h2 {
-		font-size: 14px;
+		font-size: 16px;
+		margin-top: 20px;
 	}
 
 	.mu-hero-featured-content p {
