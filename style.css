@@ -432,6 +432,11 @@ iframe {
 	font-size: 18px;
 }
 
+.glider-contain {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
 /*--------------------*/
 /* FEATURED TOURS */
 /*--------------------*/
